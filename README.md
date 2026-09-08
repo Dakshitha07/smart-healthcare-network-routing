@@ -235,10 +235,8 @@ smart-healthcare-network-routing/
 │
 └── project_images/
     └── Generated plots and network visualizations
-...
-
----
-
+~~~
+```
 ## Technologies Used
 
 - **Python**
@@ -260,54 +258,47 @@ smart-healthcare-network-routing/
 git clone https://github.com/Dakshitha07/smart-healthcare-network-routing.git
 cd smart-healthcare-network-routing
 
-pip install -r requirements.txt
+```
+### 2. Install Dependencies
 
-
-### IMPORTANT
-
-Do **not** paste this:
-
-```text
-
-git clone ...
 ```bash
-git clone ...
-
-
-The first ` ```bash ` **opens** the code box, and the second ` ``` ` **closes** it.
+pip install -r requirements.txt
+```
 
 ---
 
-## 3. Running the Project
-
-Paste:
-
-```markdown
 ## Running the Project
 
 ### Quick Test
 
-A smaller configuration can be used for testing the training and evaluation pipeline:
+A smaller configuration can be used to test the training and evaluation pipeline.
 
 ```bash
 python train_and_evaluate.py --quick
+```
 
+### Full Training
+
+Run the complete training pipeline using:
+
+```bash
 python train_and_evaluate.py
+```
 
-
+The pipeline trains the reinforcement learning models, evaluates the routing algorithms, and generates the required visualizations.
 
 ---
 
-## 4. Evaluation
-
-Paste this as normal Markdown:
-
-```markdown
 ## Evaluation
 
-The evaluation pipeline compares all four routing algorithms under the simulated healthcare network environment.
+The evaluation pipeline compares four routing algorithms under the simulated healthcare network environment:
 
-The following metrics are evaluated:
+- **MAPPO**
+- **MADDPG**
+- **Dijkstra**
+- **Distance Vector**
+
+The following Quality of Service (QoS) metrics are evaluated:
 
 - Average latency
 - Packet loss
@@ -315,7 +306,10 @@ The following metrics are evaluated:
 - Average jitter
 - Per-class latency
 
-The comparison allows the performance of the proposed MAPPO approach to be analysed against both reinforcement learning and traditional routing baselines.
+This evaluation allows the proposed MAPPO approach to be compared against both reinforcement learning and traditional routing methods.
+
+---
+
 ## Key Findings
 
 - **MAPPO achieved the lowest average latency** among the evaluated approaches.
@@ -323,8 +317,10 @@ The comparison allows the performance of the proposed MAPPO approach to be analy
 - **MAPPO achieved the highest throughput.**
 - **MAPPO achieved the lowest jitter.**
 - MAPPO demonstrated more stable training behaviour than MADDPG.
-- Healthcare traffic prioritisation allows critical traffic to receive greater importance during routing.
-- The comparative evaluation shows that the proposed MAPPO approach provides the strongest overall QoS performance in the simulated environment.
+- Healthcare traffic prioritisation gives greater importance to critical traffic.
+- Overall, MAPPO provided the strongest QoS performance in the simulated healthcare network.
+
+---
 
 ## Future Improvements
 
@@ -338,6 +334,7 @@ Possible future extensions include:
 - Investigating real SDN controller integration.
 - Evaluating the approach on larger and more dynamic network environments.
 
+---
 
 ## Conclusion
 
@@ -351,10 +348,8 @@ The framework combines:
 - Dynamic routing
 - Multi-metric QoS evaluation
 
-The proposed MAPPO approach was evaluated against MADDPG, Dijkstra, and Distance Vector routing.
+The proposed MAPPO approach was evaluated against **MADDPG, Dijkstra, and Distance Vector** routing algorithms.
 
 Based on the evaluated simulation results, **MAPPO achieved the strongest overall performance across latency, packet loss, throughput, and jitter**.
 
 The project demonstrates the potential of multi-agent deep reinforcement learning for intelligent and priority-aware routing in smart healthcare network environments.
-
-**MAPPO-based multi-agent deep reinforcement learning framework for smart healthcare SDN routing**
