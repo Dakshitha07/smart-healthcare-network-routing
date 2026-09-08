@@ -186,9 +186,23 @@ The repository includes generated visualizations covering:
 - Performance radar chart
 - 30-node hospital network topology
 
-All visualizations are available in:
+All project visualizations are available in the `project_images/` directory.
 
-`project_images/`
+### Network Topology
+
+![30-Node Hospital Network Topology](project_images/network_topology.png)
+
+### Training Comparison
+
+![MAPPO vs MADDPG Training Comparison](project_images/training_comparison.png)
+
+### Latency Comparison
+
+![Latency Comparison](project_images/comparison_latency.png)
+
+### Overall Performance Comparison
+
+![Performance Radar Chart](project_images/comparison_radar.png)
 
 ---
 
