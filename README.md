@@ -25,36 +25,24 @@ python train_and_evaluate.py --quick
 python train_and_evaluate.py
 ```
 
-### 4. View Results
-```bash
-cd webapp && python app.py
-# Open http://localhost:5000
-```
-
 ---
 
 ## Project Structure
 
 ```
 smart_healthcare_routing/
-├── config.py                  # All hyperparameters & network config
-├── network_env.py             # SDN environment (graph-based, 30 nodes)
-├── mappo_agent.py             # MAPPO algorithm (your improvement)
-├── maddpg_agent.py            # MADDPG baseline (base paper's algorithm)
-├── baselines.py               # Dijkstra & Distance Vector baselines
-├── evaluate_all.py            # Run all algorithms & collect metrics
-├── plot_results.py            # Generate comparison & training plots
-├── train_and_evaluate.py      # Main orchestrator script
-├── training_notebook.ipynb    # Jupyter notebook for interactive training
-├── requirements.txt
-├── README.md
-├── results/                   # Training logs & evaluation results (CSV/JSON)
-├── checkpoints/               # Saved model checkpoints
-├── project_images/            # All generated plots and diagrams
-└── webapp/                    # Frontend & backend dashboard
-    ├── app.py                 # Flask backend
-    └── templates/
-        └── index.html         # Dashboard UI
+├── config.py                    # Hyperparameters and network configuration
+├── network_env.py               # Healthcare SDN simulation environment
+├── mappo_agent.py               # MAPPO implementation
+├── maddpg_agent.py              # MADDPG baseline implementation
+├── baselines.py                 # Dijkstra and Distance Vector baselines
+├── evaluate_all.py              # Evaluate all routing algorithms
+├── plot_results.py              # Generate comparison visualizations
+├── train_and_evaluate.py        # Main training and evaluation script
+├── training_notebook.ipynb      # Jupyter notebook for experimentation
+├── requirements.txt             # Python dependencies
+├── README.md                    # Project documentation
+└── project_images/              # Generated plots and visualizations
 ```
 
 ---
