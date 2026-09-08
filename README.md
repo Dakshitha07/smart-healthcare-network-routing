@@ -20,7 +20,7 @@ pip install -r requirements.txt
 python train_and_evaluate.py --quick
 ```
 
-### 3. Full Training (2-4 hours GPU, 8-12 hours CPU)
+### 3. Full Training 
 ```bash
 python train_and_evaluate.py
 ```
